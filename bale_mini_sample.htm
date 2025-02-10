@@ -1,0 +1,13 @@
+<html>
+<head>
+    <script src="https://tapi.bale.ai/miniapp.js?1"></script>
+</head>
+<body>
+<script type="text/javascript">
+    function getUserPhone(){
+        window.Bale.WebApp.requestContact((success,data)=>{console.log(`success : ${success} , data:${data}`)});
+    }
+</script>
+<input type="button" value="Request phone number" onclick="getUserPhone()" />
+</body>
+</html>
